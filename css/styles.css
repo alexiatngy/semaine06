@@ -1,0 +1,86 @@
+/*----------------------------------------------------------------------------
+    Reset
+----------------------------------------------------------------------------*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+html {
+    font-size: 62.5%
+  }
+
+/*------------------------------------------------------------------------------
+   Base
+------------------------------------------------------------------------------*/
+
+body {
+    font-family: 'Averia Serif Libre', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #eca136;
+
+    background-color: rgba(9, 26, 33);
+}
+
+a{
+    text-decoration: none;
+}
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header{
+    width: 1000px;
+    height: 80px;
+    background-color: rgba(15, 38, 49, 0.95);
+    position: fixed;
+    top: 0;
+    left: calc(50% - 500px);
+    z-index: 10;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 4.0rem;
+    text-align: center;
+}
+
+.contenu{
+    max-width: 925px;
+    margin-top: 100px auto 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    align-items: center;
+   display: grid; 
+   grid-template-columns: 1fr 1fr;
+   gap: 45px;
+   list-style: none;
+   padding: none;
+   
+}
+
+li{
+     padding: 20px;
+   background-color: rgba(15, 38, 49);
+   border-radius: 10px;
+}
+
+.bouton{
+    font-size: 3.0rem;
+    color: rgba(255, 255, 255, 0.50) ;
+}
