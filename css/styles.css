@@ -114,3 +114,31 @@ footer {
     font-size: 1.6rem;
     font-variant: small-caps;
 }
+
+nav {
+    background-color: rgba(15, 38, 49);
+    border-radius: 15px;
+    position: fixed;
+    top: 200px;
+    left: 0;
+  
+  
+}
+
+.media img{
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+}
+
+.media ul{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.media li:hover{
+    position: relative;
+    left: 3px;
+}
