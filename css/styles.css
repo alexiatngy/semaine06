@@ -19,6 +19,7 @@ html {
 ------------------------------------------------------------------------------*/
 
 body {
+  
     font-family: 'Averia Serif Libre', sans-serif;
     font-weight: 900;
     font-size: 18px;
@@ -57,30 +58,59 @@ h1{
 
 .contenu{
     max-width: 925px;
-    margin-top: 100px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 img{
     max-width: 100%;
 }
 
-ul{
-    align-items: center;
+.contenu ul{
    display: grid; 
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: repeat(2, 1fr);
    gap: 45px;
    list-style: none;
-   padding: none;
+   padding: 0;
+   justify-items: center;
+   align-items: center;
    
 }
 
-li{
+.contenu li{
      padding: 20px;
    background-color: rgba(15, 38, 49);
    border-radius: 10px;
+   position: relative;
+  
+   
 }
 
 .bouton{
-    font-size: 3.0rem;
-    color: rgba(255, 255, 255, 0.50) ;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.50) ;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bouton:hover{
+    cursor: pointer;
+}
+
+footer {
+    height: 75px;
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(15, 38, 49, 0.95);
+    border-radius: 15px;
+    font-size: 1.6rem;
+    font-variant: small-caps;
 }
